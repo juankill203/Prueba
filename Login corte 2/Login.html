@@ -1,0 +1,43 @@
+<head>
+	<meta charset="utf-8">
+	<title>Login</title>
+	<body background="fondologin.jpg"></body>
+	<script type="text/javascript">
+		function validar()
+		{
+			var usuario = document.getElementById("usuario").value;
+			var Contraseña = document.getElementById("pass").value;	
+
+			if(usuario == "JUAN" && Contraseña == "juan")
+			{
+				alert("Usuario y Contraseña validos");
+                                window.open("Pagina 1.html","_self");
+			}
+			else
+			{
+				alert("Verifique sus credenciales");
+			}
+		}
+
+
+	</script>
+
+</head>
+<body>
+<center> 
+      <img src="usuario2.jpg" width="200px" height="200px"></img>
+		<table>
+			<tr>
+				<td><label>Usuario: </label></td> <td><input type="text" name="usuario" id="usuario"></td>
+			</tr>
+			<tr>
+				<td><label>Contraseña: </label></td> <td><input type="password" name="pass" id="pass"></td>
+			</tr>
+			<tr>
+				<td colspan="2"><input type="button" name="btnVerifivaca" id="btnVerifica" onclick="validar()" value="verificar" style = "width: 100%"> </td>
+			</tr>
+		</table>
+	</center>
+		
+</body>
+
