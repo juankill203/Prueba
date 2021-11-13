@@ -1,2 +1,0 @@
-usuario JUAN
-contraseña juan
